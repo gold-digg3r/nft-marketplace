@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 38% 97%; /* f9f7f1 */
+    --foreground: 0 0% 7%; /* #121212 */
+
+    --card: 45 38% 97%; /* f9f7f1 */
+    --card-foreground: 0 0% 7%; /* #121212 */
+
+    --popover: 45 38% 97%; /* f9f7f1 */
+    --popover-foreground: 0 0% 7%; /* #121212 */
+
+    --primary: 43 42% 65%; /* c8b681 */
+    --primary-foreground: 0 0% 7%; /* #121212 */
+
+    --secondary: 45 50% 88%; /* eee9d7 */
+    --secondary-foreground: 0 0% 7%; /* #121212 */
+
+    --muted: 45 50% 88%; /* eee9d7 */
+    --muted-foreground: 0 0% 40%; /* #666666 */
+
+    --accent: 43 42% 65%; /* c8b681 */
+    --accent-foreground: 0 0% 7%; /* #121212 */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 43 42% 65%; /* c8b681 */
+    --input: 43 42% 65%; /* c8b681 */
+    --ring: 43 42% 65%; /* c8b681 */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 7%; /* #121212 */
+    --foreground: 45 38% 97%; /* f9f7f1 */
+
+    --card: 0 0% 13%; /* #212121 */
+    --card-foreground: 45 38% 97%; /* f9f7f1 */
+
+    --popover: 0 0% 13%; /* #212121 */
+    --popover-foreground: 45 38% 97%; /* f9f7f1 */
+
+    --primary: 43 42% 65%; /* c8b681 */
+    --primary-foreground: 0 0% 7%; /* #121212 */
+
+    --secondary: 0 0% 22%; /* #383838 */
+    --secondary-foreground: 45 38% 97%; /* f9f7f1 */
+
+    --muted: 0 0% 22%; /* #383838 */
+    --muted-foreground: 0 0% 64%; /* #a4a4a4 */
+
+    --accent: 43 42% 65%; /* c8b681 */
+    --accent-foreground: 0 0% 7%; /* #121212 */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 22%; /* #383838 */
+    --input: 0 0% 22%; /* #383838 */
+    --ring: 43 42% 65%; /* c8b681 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Import Geist font */
+@import url("https://fonts.googleapis.com/css2?family=Geist+Sans:wght@300;400;500;600;700&display=swap");
+
+/* Apply Geist font to all text */
+body {
+  font-family: "Geist Sans", sans-serif;
+}
